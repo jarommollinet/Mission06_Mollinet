@@ -17,6 +17,140 @@ html {
   min-height: 100%;
 }
 
+/* General body styling */
 body {
-  margin-bottom: 60px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
 }
+
+/* Header styling */
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h3 {
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+/* Image styling */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Link styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Form styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+    form div {
+        margin-bottom: 15px;
+    }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+/* Utility classes */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Center images */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto;
+}
+
+/* Style <a> tags as buttons */
+.buttonstyle {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+    /* Improve button interactivity */
+    a:hover, a:focus {
+        background-color: #0056b3;
+        color: white;
+        text-decoration: none;
+    }
+
+/* Optional: Add a class for specific <a> tags you want as buttons if you don't want all <a> tags styled this way */
+.button-like {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+    .button-like:hover, .button-like:focus {
+        background-color: #218838;
+        color: white;
+        text-decoration: none;
+    }

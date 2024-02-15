@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Application
+
+@if (Model.Edited == false)
+{
+    <h2>Thank you for your submission!</h2>
+    <h3>We can't wait to watch @Model.Title</h3>
+}
+else
+{
+    <h2>Hmmm... not sure if we'll add @Model.Title to our list, but we'll review it!</h2>
+}

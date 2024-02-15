@@ -1,7 +1,15 @@
+using Mission06_Mollinet.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//Setup service for context file
+builder.Services.AddDbContext<MovieEntryApplicationContext>(options =>
+{
+    options.UseSqlite(builder.Configuration["ConnectionStrings:MovieConnection"]);
+});
 
 var app = builder.Build();
 

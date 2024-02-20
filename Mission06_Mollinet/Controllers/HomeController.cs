@@ -35,5 +35,12 @@ namespace Mission06_Mollinet.Controllers
 
             return View("Confirmation", response);
         }
+
+        public IActionResult MovieList1()
+        {
+            //Linq
+            var applications = _context.Applications;
+                return View(applications);
+        }
     }
 }

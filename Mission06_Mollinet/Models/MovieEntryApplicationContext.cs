@@ -9,6 +9,7 @@ namespace Mission06_Mollinet.Models
         {
         }
 
-        public DbSet<Application> Applications { get; set; }
+        public DbSet<Movies> Movies { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }
